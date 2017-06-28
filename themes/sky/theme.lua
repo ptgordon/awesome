@@ -63,7 +63,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 )
 
 -- MISC
-theme.wallpaper             = "~/Images/wallhaven-134529.jpg"
+theme.wallpaper             = "~/.config/awesome/themes/sky/wallhaven-134529.jpg"
 theme.taglist_squares       = "true"
 theme.titlebar_close_button = "true"
 theme.menu_height = dpi(15)
