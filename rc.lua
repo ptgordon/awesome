@@ -7,10 +7,10 @@ local wibox = require("wibox")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
+local lain = require("lain")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
-local lain = require("lain")
 
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
@@ -124,9 +124,6 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
-
--- Cpu
-local mycpu = lain.widget.cpu()
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -575,7 +572,7 @@ end)
 awful.util.spawn_with_shell("xcompmgr -c &")
 awful.util.spawn_with_shell("nm-applet -c &")
 awful.util.spawn_with_shell("nmcli dev wifi connect CenturyLinkD096 password 9438d95e7b7923")
-awful.util.spawn_with_shell("megasync -c &")
+--awful.util.spawn_with_shell("megasync -c &")
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus c.opacity = 1 end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal c.opacity = 0.75 end)
