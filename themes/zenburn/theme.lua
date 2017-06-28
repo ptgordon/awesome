@@ -7,7 +7,7 @@ local themes_path = require("gears.filesystem").get_themes_dir()
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = themes_path .. "zenburn/zenburn-background.png"
+theme.wallpaper             = "~/.config/awesome/themes/sky/wallhaven-134529.jpg"
 -- }}}
 
 -- {{{ Styles
@@ -24,7 +24,7 @@ theme.bg_systray = theme.bg_normal
 -- }}}
 
 -- {{{ Borders
-theme.useless_gap   = 0
+theme.useless_gap   = 5
 theme.border_width  = 2
 theme.border_normal = "#3F3F3F"
 theme.border_focus  = "#6F6F6F"
